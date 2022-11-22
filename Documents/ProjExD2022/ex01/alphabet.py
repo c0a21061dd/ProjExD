@@ -2,6 +2,7 @@ import random
 
 
 
+
 def shutudai():
     global moji_lst
     moji_lst = []
