@@ -22,11 +22,11 @@ def kaitou():
     #print(len(moji_lst))
 
     ans1P = int(input("欠損文字数はいくつあるでしょうか？"))
-    if ans1P == len(moji_lst):
+    if ans1P == (10 - len(moji_lst)):
         print("正解です。それでは具体的に欠損文字数を1ずつ入力してください")
         ans2P = input("1つ目の文字を入力してください")
         ans3P = input("2つ目の文字を入力してください")
-        if ans2P and ans3P in a:
+        if (ans2P and ans3P in a) and ans2P != ans3P:
             print("正解です。おめでとうございます。")
         else:
             print("不正解です。またチャレンジしてください。")
