@@ -38,5 +38,6 @@ for ope in operators:
         r += 1
         c -= 4
 
+
 root.mainloop()
 
