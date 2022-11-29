@@ -7,7 +7,11 @@ def button_click(event):
     #tkm.showinfo("", f"{num}ボタンがクリックされました")
     #entry.insert(tk.END, num)
     if num == "=":
-        pass
+        siki = entry.get()
+        res = eval(siki)
+        res = eval(siki)
+        entry.delete(0, tk.END)
+        entry.insert(tk.END, res)
     else:
         entry.insert(tk.insert(tk.END, num))
 
