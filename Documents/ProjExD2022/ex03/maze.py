@@ -1,5 +1,6 @@
 import tkinter as tk
 import maze_maker as mm
+import tkinter.messagebox as tkm
 
 def key_down(event):
     global key
@@ -18,9 +19,12 @@ def main_proc():
         if key == "Up": my += 1
         if key == "Down": my -= 1
         if key == "Left": mx += 1
-        if key == "Right": mx -= 1        
-    cx, cy = mx*100+50, my*100+50
+        if key == "Right": mx -= 1
+     
+    cx, cy = mx*100+50, my*100+50 
     canvas.coords("kokaton", cx, cy)
+    if mx == 13 and my == 7:
+        tkm.showinfo("おめでとう", "ゴールしました")
     root.after(100, main_proc)
 
 if __name__ == "__main__":
@@ -35,7 +39,8 @@ if __name__ == "__main__":
     cx, cy = 300, 400
     mx, my = 1, 1
     cx, cy = mx*100+50, my*100+50
-    tori = tk.PhotoImage(file="fig/8.png")
+    kokaton_form = "fig/0.png"
+    tori = tk.PhotoImage(file=kokaton_form)
     canvas.create_image(cx, cy, image=tori, tag="kokaton")
     key = ""
     root.bind("<KeyPress>", key_down)
