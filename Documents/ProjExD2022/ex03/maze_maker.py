@@ -25,7 +25,7 @@ def show_maze(canvas, maze_lst):
             canvas.create_rectangle(x*100, y*100, x*100+100, y*100+100, fill=color[maze_lst[x][y]])
     canvas.create_rectangle(100, 100, 200, 200, fill="blue")
     canvas.create_rectangle(1300, 700, 1400, 800, fill="red")
-
+    
 #2次元リストを渡すとCUIで迷路を表示
 def print_maze(maze_lst):
     maze_lst = [list(x) for x in zip(*maze_lst)] #転置
