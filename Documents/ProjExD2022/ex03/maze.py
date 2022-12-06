@@ -8,7 +8,6 @@ def key_up(event):
     global key
     key = ""
 
-
 def main_proc():
     global cx, cy, mx, my
     if key == "Up": my -= 1
