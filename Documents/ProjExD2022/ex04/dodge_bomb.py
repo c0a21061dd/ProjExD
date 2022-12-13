@@ -98,13 +98,7 @@ def main():
         vy_1 *= tate
 
         # 練習８
-        if tori_rct.colliderect(bomb_rct):
-            root = tk.Tk()
-            root.withdraw()
-            tkm.showinfo("失敗", "GAME OVER")
-            return
-
-        if tori_rct.colliderect(bomb_rct_1):
+        if tori_rct.colliderect(bomb_rct) or tori_rct.colliderect(bomb_rct_1):
             root = tk.Tk()
             root.withdraw()
             tkm.showinfo("失敗", "GAME OVER")
