@@ -51,8 +51,8 @@ def main():
     pg.draw.circle(bomb_sfc_1, (63, 0, 0), (15, 15), 6)
     pg.draw.circle(bomb_sfc_1, (0, 0, 0), (15, 15), 3)
     bomb_rct_1 = bomb_sfc_1.get_rect()
-    bomb_rct_1.centerx = random.randint(0+5, scrn_rct.width-5)
-    bomb_rct_1.centery = random.randint(0+5, scrn_rct.height-5)
+    bomb_rct_1.centerx = random.randint(0+30, scrn_rct.width-30)
+    bomb_rct_1.centery = random.randint(0+30, scrn_rct.height-30)
     scrn_sfc.blit(bomb_sfc_1, bomb_rct_1) 
 
     vx, vy = +1, +1
