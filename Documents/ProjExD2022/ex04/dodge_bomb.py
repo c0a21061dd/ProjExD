@@ -14,6 +14,7 @@ def check_bound(obj_rct, scr_rct):
     if obj_rct.top < scr_rct.top or scr_rct.bottom < obj_rct.bottom:
         tate = -1
     return yoko, tate
+
 def main():
     clock =pg.time.Clock()
     # 練習１
@@ -50,12 +51,12 @@ def main():
     pg.draw.circle(bomb_sfc_1, (63, 0, 0), (15, 15), 6)
     pg.draw.circle(bomb_sfc_1, (0, 0, 0), (15, 15), 3)
     bomb_rct_1 = bomb_sfc_1.get_rect()
-    bomb_rct_1.centerx = random.randint(0+1, scrn_rct.width-1)
-    bomb_rct_1.centery = random.randint(0+1, scrn_rct.height-1)
+    bomb_rct_1.centerx = random.randint(0+5, scrn_rct.width-5)
+    bomb_rct_1.centery = random.randint(0+5, scrn_rct.height-5)
     scrn_sfc.blit(bomb_sfc_1, bomb_rct_1) 
 
     vx, vy = +1, +1
-    vx_1, vy_1 = +1.5, +1.5
+    vx_1, vy_1 = +1.7, +2
     # 練習２
     while True:
         scrn_sfc.blit(pgbg_sfc, pgbg_rct) 
