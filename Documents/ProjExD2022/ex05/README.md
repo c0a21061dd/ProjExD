@@ -1,19 +1,51 @@
-# 第5回
-## 負けるな！こうかとん（ex05/fight_kokaton.py）
+# 第５回
+## 戦え！こうかとん (ex05/fight_koukaton.py)
 ### ゲーム概要
-- ex05/fight_kokaton.pyを実行すると，1600x900のスクリーンに惑星の表面が描画され，こうか
-とんを移動させ飛び回る爆弾から逃げるゲーム
-- こうかとんが爆弾と接触するとゲームオーバーで終了する
+- ex05/fight_koukatonを実行すると，1400x1000のウィンドウが描写され、爆弾から矢印キーでこうかとんを動かして、よけるゲーム
+- 爆弾の初期位置はランダム
 ### 操作方法
 - 矢印キーでこうかとんを上下左右に移動する
-### 追加機能
-- 爆弾を複数個にする
-- 爆弾それぞれに色を設定する
-- 音楽を再生するようにした
-- こうかとんの移動に効果音を付けた
-- ゲームオーバー時にメッセージと逃げた時間を表示する
-- 背景画像を変更した
-### ToDo（実装しようと思ったけど時間がなかった）
-- [ ] 着弾するとこうかとん画像が切り替わる
-- [ ] こうかとんを戦わせる機能
+- escape で終了
+### 追加機能(ex04)
+- ライフ の設定 初期ライフは3 LIFE
+- 無敵時間の設定 初期設定は１ INVINCIBLE_TIME
+- 左シフトで ダッシュ
+- F1 でリセット
+- ヒットストップを追加
+- 被弾で画像が変わる
+- BGMの設定
+### 追加機能(ex05)
+- クラスの追加 Screen, Image, Koukaton, Enemy, BackGroundImage, Life, Bomb, Sound, BGM, SoundEffect
+- 爆弾を画像に変更
+- 爆弾に当たった時爆弾が消えるように設定
+- 敵キャラの追加
+- 効果音の追加
+- 左CTRでアタックモード 敵を倒せる
+- 爆弾と敵キャラを複数に設定
+- 開始直後の被弾を無効
+## ex06
+- 画面のスクロール
+- スコアボードの作成
+- スコアの表示
+- 経過時間の表示(秒)
 ### メモ
+- ハートの画像 (nc237709.png)
+- https://commons.nicovideo.jp/material/nc237709
+- 爆弾の画像 (bakudan.png)
+- https://www.irasutoya.com/2014/04/blog-post_4.html
+- 炎の画像 (nc289332.png)
+- https://commons.nicovideo.jp/material/nc289332
+- 敵の画像 (nc223460.png)
+- https://commons.nicovideo.jp/material/nc223460
+- 効果音 (nc172283.wav)
+- https://commons.nicovideo.jp/material/nc172283
+- 効果音 (nc84862.wav)
+- https://commons.nicovideo.jp/material/nc84862
+- 効果音 (nc224596.wav)
+- https://commons.nicovideo.jp/material/nc224596
+- BGM (こんとどぅふぇ素材No.0129-Last Horizon.wav)
+- https://conte-de-fees.com/bgm/2199.html
+- 音楽：こんとどぅふぇ
+- 音楽：こんとどぅふぇ HiLi
+- music:ConteDeFees
+- music:ConteDeFees HiLi
